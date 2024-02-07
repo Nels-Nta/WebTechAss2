@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+     
+
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>           
+        </div>
+        <div class="container">
+            <div class="title">Registration</div>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <div class="userdetails">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your Username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="number" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your Password" required>                        
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password 1</span>
+                        <input type="password"  placeholder="Confirm your Password" required>
+                    </div>                       
+                </div>                    
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="male">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <span class="gender">Male</span>                                
+                        </label>
+                        <label for="female">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <span class="gender">Female</span>                                
+                        </label>
+                        <label for="prefer-not-to-say">
+                            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                            <span class="gender">Prefer not to say</span>                                
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div> 
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Ntabana</p>
+    </footer>
+</body>
+</html>
